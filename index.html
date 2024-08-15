@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="crud.css">
+</head>
+<body>
+ <div id="container">
+     <div id="title">
+         <p>crud application</p>
+     </div>
+     <div id="form">
+         <div id="firstname">
+            <label for="first">first name</label>
+            <input  id="first" type="text" placeholder="enter first name" required>
+         </div>
+         <div id="lastname">
+            <label for="last">last name</label>
+            <input  id="last" type="text" placeholder="enter last name" required>
+         </div>
+         <div id="rollon">
+            <label for="roll">roll on</label>
+            <input  id="roll" type="text" placeholder="enter roll on" required>
+         </div>
+         
+         <button onclick="create()" type="submit" id="submit">submit</button>
+        </div>
+     <table id="table">
+         <thead >
+             <tr id="header">
+                 <td>first name</td>
+                 <td>last name</td>
+                 <td>roll no</td>
+                 <td>actions</td>
+             </tr>
+         </thead>
+
+
+
+         <tbody id="tbody">
+           
+            
+         </tbody>
+     </table>
+ </div>  
+    
+
+
+<script src="crud.js"></script>   
+</body>
+</html>
